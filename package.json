@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/khantthuaung/web-album.git"
   },
-  "author": "khant thu aung, paing thet ko",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/khantthuaung/web-album/issues"
   },
-  "homepage": "https://github.com/khantthuaung/web-album#readme",
-  "dependencies": {
-    "nodemon": "^2.0.4"
-  }
+  "homepage": "https://github.com/khantthuaung/web-album#readme"
 }
