@@ -14,11 +14,31 @@ body{
     width: 100%;
     height: 100vh;
 }
+#logo{grid-area: logo;}
+#inputfield{grid-area: input;}
+#navi{grid-area: navi;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:'logo input input input input navi';
+    
+}
+/* logo */
+#logo{
+    margin: 20px 60px;
+    display: flex;
+}
+#logo a{
+    color: rgb(31, 31, 28);
+    font-size: 1.5em;
+    text-decoration: none;   
+}
 /* navbar */
 nav{
+    top: 20px;
     position: relative;
-    margin-top: 30px;
-    float: right;
+    
+    
 }
 nav a{
     font-size: 20px;
@@ -29,15 +49,14 @@ nav a{
 nav a:hover{
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 black;
-    background-color: crimson;
+    background-color: rgba(65, 74, 76, 0.6);
 }
 
 /* end-navbar */
 
 /* search-bar */
 form{
-    
-    top: 20px;
+    top:20px;
     position: relative;
     text-align: center;
 }
@@ -53,4 +72,49 @@ input[type="text"]::placeholder{
     text-align: center;
     font-size: 18px;
 }
+
+/* content */
+.title{grid-area:title;}
+.slogan{grid-area: slogan;}
+.photos{grid-area:photos;}
+
+.content{
+    margin-top: 150px;
+    margin-left: 60px;
+    display: grid;
+    grid-template-areas: 'title title title photos photos photos'
+                        'slogan slogan slogan photos photos photos';
+}
+.content > div{
+    text-align: left;
+    padding: 20px 0;
+}
+img{
+    height:200px;
+    width:300px;
+    border-radius:10px ;
+}
+.color1{
+    opacity: 0.6;
+    position: absolute;
+    
+}
+.color2{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.color3{
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.color4{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 90px;
+}
+
+
+
 
