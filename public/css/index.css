@@ -5,14 +5,16 @@
     box-sizing: border-box;
     
 }
-html{
-    background-image: url("../photos/Path1@2x.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 body{
     width: 100%;
     height: 100vh;
+}
+.home{
+    height: 100%;
+    background-image: url("../photos/Path1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 }
 #logo{grid-area: logo;}
 #inputfield{grid-area: input;}
@@ -29,6 +31,7 @@ body{
     display: flex;
 }
 #logo a{
+    font-family: 'Fredoka One', cursive;
     color: rgb(31, 31, 28);
     font-size: 1.5em;
     text-decoration: none;   
@@ -77,44 +80,116 @@ input[type="text"]::placeholder{
 .title{grid-area:title;}
 .slogan{grid-area: slogan;}
 .photos{grid-area:photos;}
+.button{grid-area: button;}
 
 .content{
-    margin-top: 150px;
+    margin-top: 130px;
     margin-left: 60px;
     display: grid;
     grid-template-areas: 'title title title photos photos photos'
-                        'slogan slogan slogan photos photos photos';
+                        'slogan slogan slogan photos photos photos'
+                        'button button button button button button';
 }
-.content > div{
+.content div{
     text-align: left;
     padding: 20px 0;
 }
-img{
+.content img{
     height:200px;
     width:300px;
     border-radius:10px ;
+    box-shadow: 0 3px 6px 0 black;
 }
-.color1{
+.img1{
     opacity: 0.6;
     position: absolute;
+    animation: flyin 3s ease-in-out;
     
 }
-.color2{
+
+.img2{
+    opacity: 0.75;
     position: absolute;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 50px;
+    margin-left: 50px;
+    animation: flyin 4s ease-in-out;
+    
 }
-.color3{
+.img3{
+    opacity: 0.8;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 100px;
+    margin-left: 100px;
+    animation: flyin 5s ease-in-out;
+   
+}
+.img4{
+    opacity: 0.9;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 150px;
+    animation: flyin 6s ease-in-out;
+    
+} 
+#explore{
+    margin-top: 80px;
+    animation: float 5s ease-in infinite;
+
+}
+.button{
+    
+    font-size:18px;
+    color: black;
+    text-decoration: none;
+    padding: 10px ;
+    text-align: center;
     margin-left: 60px;
+    border-radius: 10px;
+    background-color: rgba(53, 56, 57, 0.6);
+    box-shadow: 0 4px 6px 0 rgb(99, 89, 89);
+   
 }
-.color4{
-    position: absolute;
-    margin-top: 90px;
-    margin-left: 90px;
+.button:hover{
+   
+    box-shadow: 0 6px 8px 0 rgb(99, 89, 89);
 }
-
-
-
+/* photo layout */
+.column{
+    float: left;
+    width: 33%;
+    padding: 10px;
+}
+.column img{
+    box-shadow: 0px 4px 6px 0px gray;
+    width: 100%;
+    margin-top: 12px;  
+}
+.row:after{
+        content: "";
+        display: table;
+        clear: both;
+}
+/* animations */
+/* @keyframes flyin{
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+} */
 
