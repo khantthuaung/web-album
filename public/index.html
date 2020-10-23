@@ -1,105 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/687f2aad7a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-</head>
-<body>
-<!-- home -->
-<div class="home">
-    <div class="grid-container">
+    <link rel="stylesheet" href="css/index.css" />
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <!-- home -->
+    <div class="home">
+      <div class="grid-container">
         <div id="logo">
-        <a href="#">Web-Album</a>
+          <a href="#">Web-Album</a>
         </div>
         <div id="inputfield">
-        <form action="">
-            <input type="text" placeholder="Search for high resolution photos"> 
-        </form>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Search for high resolution photos"
+            />
+          </form>
         </div>
         <div id="navi">
-        <nav>
-            <a href="#">Sign Up</a> 
+          <nav>
+            <a href="#">Sign Up</a>
             <a href="#">Login</a>|
             <a href="#">Submit &nbsp;Photo</a>
-        </nav>
-        
+          </nav>
         </div>
-    </div>
-    <div class="content">
+      </div>
+      <div class="content">
         <div class="title">
-            <h1>Web-Album</h1>
+          <h1>Web-Album</h1>
         </div>
         <div class="slogan">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <p>Aut esse nam voluptates a deleniti magni,</p>    
-            
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <p>Aut esse nam voluptates a deleniti magni,</p>
         </div>
         <div class="photos">
-            <div class="img1">
-                <img src="photos/car.jpg" alt="" srcset="">
-            </div>
-            <div class="img2"><img src="photos/film.jpg" alt="" srcset=""></div>
-            <div class="img3"><img src="photos/oldtv.jpg" alt="" srcset=""></div>
-            <div class="img4"><img src="photos/shop.jpg" alt="" srcset=""></div>
-
+          <div class="img1">
+            <img src="photos/car.jpg" alt="" srcset="" />
+          </div>
+          <div class="img2"><img src="photos/film.jpg" alt="" srcset="" /></div>
+          <div class="img3">
+            <img src="photos/oldtv.jpg" alt="" srcset="" />
+          </div>
+          <div class="img4"><img src="photos/shop.jpg" alt="" srcset="" /></div>
         </div>
+      </div>
+      <div id="explore">
+        <a href="#" class="button"
+          >Explore <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
     </div>
-    <div id="explore">
-       <a href="#" class="button">Explore <i class="fas fa-arrow-right"></i></a>
-    </div>
-</div>
 
-<!-- end-home -->
+    <!-- end-home -->
 
-<!-- layout -->
-
-<div class="grid-layout">
-    <div class="column">
-    <img src="photos/car.jpg" alt="">
-    <img class="item2" src="photos/man.jpg" alt="">
-    <img src="photos/shop.jpg" alt="">
-    <img src="photos/hill.jpg" alt="">
-    <img src="photos/oldtv.jpg" alt="">
-    <img src="photos/car.jpg" alt="">
-    <img class="item2" src="photos/man.jpg" alt="">
-    <img src="photos/shop.jpg" alt="">
-    <img src="photos/hill.jpg" alt="">
-    <img src="photos/oldtv.jpg" alt="">
-    <img src="photos/car.jpg" alt="">
-    </div>
-    <div class="column">
-        <img src="photos/man.jpg" alt="">
-        <img class="item2" src="photos/car.jpg" alt="">
-        <img src="photos/hill.jpg" alt="">
-        <img src="photos/oldtv.jpg" alt="">
-        <img src="photos/shop.jpg" alt="">
-        <img src="photos/car.jpg" alt="">
-        <img class="item2" src="photos/man.jpg" alt="">
-        <img src="photos/shop.jpg" alt="">
-        <img src="photos/hill.jpg" alt="">
-        <img src="photos/oldtv.jpg" alt="">
-        <img src="photos/car.jpg" alt="">
-        </div>
-        <div class="column">
-            <img src="photos/car.jpg" alt="">
-            <img class="item2" src="photos/man.jpg" alt="">
-            <img src="photos/shop.jpg" alt="">
-            <img src="photos/hill.jpg" alt="">
-            <img src="photos/oldtv.jpg" alt="">
-            <img src="photos/car.jpg" alt="">
-            <img class="item2" src="photos/man.jpg" alt="">
-            <img src="photos/shop.jpg" alt="">
-            <img src="photos/hill.jpg" alt="">
-            <img src="photos/oldtv.jpg" alt="">
-            <img src="photos/car.jpg" alt="">
+    <!-- layout -->
+    <div class="photo-content-container">
+      <nav class="category">
+        <button id="left-scroll" class="left-scroll"><i class="fas fa-chevron-left"></i></button>
+        
+        <ul>
+          <li><button class="category-btn1">Flowers</button></li>
+          <li><button class="category-btn2">Cars</button></li>
+          <li><button class="category-btn3">Books</button></li>
+          <li><button class="category-btn4">Buildings</button></li>
+          <li><button class="category-btn5">Furniture</button></li>
+          <li><button class="category-btn6">Clouds</button></li>
+          <li><button class="category-btn1">Flowers</button></li>
+          <li><button class="category-btn2">Cars</button></li>
+          <li><button class="category-btn3">Books</button></li>
+          <li><button class="category-btn4">Buildings</button></li>
+          <li><button class="category-btn5">Furniture</button></li>
+          <li><button class="category-btn6">Clouds</button></li>
+          
+          
+        </ul>
+        <button id="right-scroll" class="right-scroll"><i class="fas fa-chevron-right"></i></button>
+      </nav>
+      <div class="photo-layout">
+        <figure class="img_one">
+          <div class=""></div>
+          <img
+            src="./photos/car.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
             </div>
-
-    
-
-</div>
-</body>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_two">
+          <div class=""></div>
+          <img
+            src="./photos/hill.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_three">
+          <div class=""></div>
+          <img
+            src="./photos/car.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_four">
+          <div class=""></div>
+          <img
+            src="./photos/hill.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_five">
+          <div class=""></div>
+          <img
+            src="./photos/car.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_six">
+          <div class=""></div>
+          <img
+            src="./photos/hill.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_seven">
+          <div class=""></div>
+          <img
+            src="./photos/hill.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+        <figure class="img_eight">
+          <div class=""></div>
+          <img
+            src="./photos/hill.jpg"
+            alt="Cannot load photo"
+            class="image-property"
+          />
+          <figcaption>
+            <div>
+              <img src="./photos/user.jpg" alt="" class="user_img" />
+              <label for="user-icon">Paing Thet Ko</label>
+            </div>
+            <button class="download-btn" id="download-btn">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
 </html>
